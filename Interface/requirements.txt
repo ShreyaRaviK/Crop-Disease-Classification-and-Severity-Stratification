@@ -1,0 +1,10 @@
+flask
+plotly
+numpy
+requests
+pillow
+# Install torch/tensorflow as you did before
+# (e.g., 'tensorflow' or 'tensorflow-cpu')
+tensorflow
+torch
+torchvision

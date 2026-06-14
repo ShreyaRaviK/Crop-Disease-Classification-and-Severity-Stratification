@@ -1,0 +1,192 @@
+{
+  "American Bollworm on Cotton": {
+    "title": "American Bollworm (Cotton)",
+    "summary": "A major pest, the American Bollworm (Helicoverpa armigera) feeds on cotton squares, flowers, and bolls, causing significant yield loss. Larvae bore into bolls, making them susceptible to secondary infections.",
+    "source": "Curated summary"
+  },
+  "Anthracnose on Cotton": {
+    "title": "Cotton Anthracnose",
+    "summary": "A fungal disease (Colletotrichum gossypii) affecting cotton seedlings, leaves, and bolls. It causes dark, sunken lesions on bolls and can lead to boll rot, especially in wet conditions.",
+    "source": "Curated summary"
+  },
+  "Army worm": {
+    "title": "Armyworm Infestation",
+    "summary": "Larvae of various moth species that feed voraciously on foliage, often moving in large groups like an army. They can defoliate crops rapidly, causing severe damage to young plants.",
+    "source": "Curated summary"
+  },
+  "Becterial Blight in Rice": {
+    "title": "Rice Bacterial Blight",
+    "summary": "Caused by the bacterium Xanthomonas oryzae pv. oryzae. Symptoms include water-soaked streaks on leaves that turn yellow and white, leading to wilting (kresek) in seedlings.",
+    "source": "Curated summary"
+  },
+  "Brownspot": {
+    "title": "Rice Brown Spot",
+    "summary": "A fungal disease (Cochliobolus miyabeanus) characterized by small, oval, dark brown spots on leaves, leaf sheaths, and grains. Severe infection reduces grain quality and yield.",
+    "source": "Curated summary"
+  },
+  "Common_Rust": {
+    "title": "Maize Common Rust",
+    "summary": "A fungal disease (Puccinia sorghi) that produces cinnamon-brown, powdery pustules primarily on the upper and lower surfaces of maize leaves. It thrives in cool, humid conditions.",
+    "source": "Curated summary"
+  },
+  "Cotton Aphid": {
+    "title": "Cotton Aphid Infestation",
+    "summary": "Small, soft-bodied insects that suck sap from cotton plants, causing stunted growth and leaf curling. They excrete honeydew, which promotes the growth of sooty mold.",
+    "source": "Curated summary"
+  },
+  "Flag Smut": {
+    "title": "Wheat Flag Smut",
+    "summary": "A fungal disease (Urocystis tritici) of wheat. It causes long, gray-to-black streaks (sori) on leaves and leaf sheaths, leading to plant distortion and reduced grain production.",
+    "source": "Curated summary"
+  },
+  "Gray_Leaf_Spot": {
+    "title": "Maize Gray Leaf Spot",
+    "summary": "A serious fungal disease (Cercospora zeae-maydis) of maize. It forms rectangular, gray-to-tan lesions on leaves, which can merge and cause premature leaf death, reducing yield.",
+    "source": "Curated summary"
+  },
+  "Leaf Curl": {
+    "title": "Leaf Curl Disease",
+    "summary": "A viral disease transmitted by whiteflies, causing leaves to curl, crinkle, and become distorted. It severely affects plant growth and fruit production, particularly in cotton and tomato.",
+    "source": "Curated summary"
+  },
+  "Leaf smut": {
+    "title": "Sugarcane Leaf Smut",
+    "summary": "A fungal disease (Sporisorium scitamineum) characterized by a long, whip-like structure emerging from the growing point of the cane. This whip is covered in black spores and stunts the plant.",
+    "source": "Curated summary"
+  },
+  "Mosaic sugarcane": {
+    "title": "Sugarcane Mosaic Virus (SCMV)",
+    "summary": "A viral disease causing a distinct mosaic pattern of light and dark green areas on the leaves. It reduces cane vigor, stalk diameter, and sugar content, leading to significant losses.",
+    "source": "Curated summary"
+  },
+  "RedRot sugarcane": {
+    "title": "Sugarcane Red Rot",
+    "summary": "A devastating fungal disease (Colletotrichum falcatum) that affects the internal tissues of the cane stalk, turning them reddish with white cross-bands. It causes souring and drying of the cane.",
+    "source": "Curated summary"
+  },
+  "RedRust sugarcane": {
+    "title": "Sugarcane Red Rust",
+    "summary": "A fungal disease (Puccinia melanocephala) that produces reddish-brown pustules on the leaves. Severe infection can cause premature leaf drying and reduce photosynthetic capacity.",
+    "source": "Curated summary"
+  },
+  "Rice Blast": {
+    "title": "Rice Blast Disease",
+    "summary": "Caused by the fungus Magnaporthe oryzae, this is one of the most destructive rice diseases globally. It affects all parts of the plant, forming diamond-shaped lesions on leaves and rotting the neck of the panicle.",
+    "source": "Curated summary"
+  },
+  "Tungro": {
+    "title": "Rice Tungro Virus (RTV)",
+    "summary": "A viral disease transmitted by green leafhoppers. Infected plants show yellow-orange discoloration of leaves, stunting, and reduced tillering, leading to poor grain filling.",
+    "source": "Curated summary"
+  },
+  "Wheat Brown leaf Rust": {
+    "title": "Wheat Leaf Rust (Brown Rust)",
+    "summary": "Caused by the fungus Puccinia triticina, it forms small, circular, orange-brown pustules mainly on the upper surface of wheat leaves. It reduces photosynthesis and grain yield.",
+    "source": "Curated summary"
+  },
+  "Wheat Stem fly": {
+    "title": "Wheat Stem Fly Infestation",
+    "summary": "Larvae of the stem fly bore into the wheat stem, feeding on the central shoot. This causes the central leaf to wilt and die (known as 'dead heart'), severely damaging the plant.",
+    "source": "Curated summary"
+  },
+  "Wheat aphid": {
+    "title": "Wheat Aphid Infestation",
+    "summary": "Small, sap-sucking insects that cluster on wheat leaves and heads. They cause direct damage by feeding and indirect damage by transmitting viruses like Barley Yellow Dwarf Virus (BYDV).",
+    "source": "Curated summary"
+  },
+  "Wheat black rust": {
+    "title": "Wheat Stem Rust (Black Rust)",
+    "summary": "A devastating fungal disease (Puccinia graminis) that forms large, brick-red to black pustules on the stems and leaf sheaths. It severely weakens the plant and shrivels the grain.",
+    "source": "Curated summary"
+  },
+  "Wheat leaf blight": {
+    "title": "Wheat Leaf Blight",
+    "summary": "A general term for diseases causing large, irregular necrotic lesions on wheat leaves. Often associated with fungal pathogens like *Bipolaris sorokiniana* or *Septoria*.",
+    "source": "Curated summary"
+  },
+  "Wheat mite": {
+    "title": "Wheat Mite Infestation",
+    "summary": "Tiny arachnids that feed on wheat leaves, causing stippling, bronzing, or silvering of the foliage. Heavy infestations can lead to leaf death and reduced plant vigor.",
+    "source": "Curated summary"
+  },
+  "Wheat powdery mildew": {
+    "title": "Wheat Powdery Mildew",
+    "summary": "A fungal disease (Blumeria graminis) characterized by white to gray, powdery patches on the upper surface of leaves and stems. It reduces photosynthesis and can cause yield loss.",
+    "source": "Curated summary"
+  },
+  "Wheat scab": {
+    "title": "Wheat Head Scab (Fusarium Head Blight)",
+    "summary": "A fungal disease (Fusarium graminearum) that infects wheat heads, causing premature bleaching of spikelets. It reduces grain quality and can produce mycotoxins harmful to humans and livestock.",
+    "source": "Curated summary"
+  },
+  "Wheat___Yellow_Rust": {
+    "title": "Wheat Stripe Rust (Yellow Rust)",
+    "summary": "Caused by the fungus Puccinia striiformis, it forms yellow-orange pustules arranged in stripes on the leaves. It thrives in cool, moist conditions and can cause severe yield reduction.",
+    "source": "Curated summary"
+  },
+  "Wilt": {
+    "title": "Vascular Wilt Disease",
+    "summary": "A general term for diseases caused by soil-borne fungi (e.g., Fusarium or Verticillium) that block the plant's vascular system. This leads to sudden wilting, yellowing, and eventual death of the plant.",
+    "source": "Curated summary"
+  },
+  "Yellow Rust Sugarcane": {
+    "title": "Sugarcane Yellow Rust",
+    "summary": "A fungal disease (Puccinia kuehnii) that produces bright yellow, powdery pustules on the leaves. It is highly destructive to susceptible varieties, causing significant yield loss.",
+    "source": "Curated summary"
+  },
+  "bacterial_blight in Cotton": {
+    "title": "Cotton Bacterial Blight",
+    "summary": "Caused by the bacterium Xanthomonas citri pv. malvacearum. Symptoms include angular, water-soaked spots on leaves, black lesions on stems (black arm), and boll rot.",
+    "source": "Curated summary"
+  },
+  "bollrot on Cotton": {
+    "title": "Cotton Boll Rot",
+    "summary": "A condition where cotton bolls decay due to various fungal or bacterial pathogens. It often occurs in humid conditions and leads to stained lint and premature boll opening.",
+    "source": "Curated summary"
+  },
+  "bollworm on Cotton": {
+    "title": "Cotton Bollworm Infestation",
+    "summary": "Larvae that bore into and feed on cotton bolls, flowers, and squares. This internal feeding damages the developing lint and seeds, leading to significant economic losses.",
+    "source": "Curated summary"
+  },
+  "cotton mealy bug": {
+    "title": "Cotton Mealybug Infestation",
+    "summary": "Small, soft-bodied insects covered in a white, waxy substance. They suck sap, causing stunted growth and leaf distortion, and excrete honeydew, leading to sooty mold growth.",
+    "source": "Curated summary"
+  },
+  "cotton whitefly": {
+    "title": "Cotton Whitefly Infestation",
+    "summary": "Tiny, winged insects that feed on plant sap, causing yellowing and leaf drop. They are major vectors for viral diseases like Cotton Leaf Curl Virus (CLCuV).",
+    "source": "Curated summary"
+  },
+  "maize ear rot": {
+    "title": "Maize Ear Rot",
+    "summary": "Fungal diseases (e.g., Fusarium, Gibberella) that infect the maize ear, causing moldy kernels and reduced grain quality. Some fungi produce mycotoxins, making the grain unsafe.",
+    "source": "Curated summary"
+  },
+  "maize fall armyworm": {
+    "title": "Maize Fall Armyworm",
+    "summary": "A highly destructive migratory pest (Spodoptera frugiperda). Larvae feed heavily on maize leaves, whorls, and ears, often leaving behind characteristic 'window-pane' damage and frass.",
+    "source": "Curated summary"
+  },
+  "maize stem borer": {
+    "title": "Maize Stem Borer",
+    "summary": "Larvae of moths that bore into the maize stem, disrupting nutrient flow. This causes 'dead heart' symptoms in young plants and stalk breakage in older plants, reducing yield.",
+    "source": "Curated summary"
+  },
+  "pink bollworm in cotton": {
+    "title": "Pink Bollworm (Cotton)",
+    "summary": "A serious pest (Pectinophora gossypiella) whose larvae feed inside cotton bolls, damaging the lint and seeds. Infested bolls often fail to open properly, leading to 'rosetted' flowers.",
+    "source": "Curated summary"
+  },
+  "red cotton bug": {
+    "title": "Red Cotton Bug Infestation",
+    "summary": "True bugs (Dysdercus spp.) that feed on developing cotton seeds, staining the lint and reducing seed viability. They are often found clustering on bolls and leaves.",
+    "source": "Curated summary"
+  },
+  "thirps on cotton": {
+    "title": "Cotton Thrips Infestation",
+    "summary": "Minute, slender insects that rasp plant tissue and suck the exuding sap. Feeding causes silvering or bronzing of leaves, distortion of growing points, and reduced plant vigor.",
+    "source": "Curated summary"
+  }
+}

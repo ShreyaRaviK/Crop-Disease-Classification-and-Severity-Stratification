@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Plant Health Diagnostics</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"/>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+
+  
+<div class="leaf-container">
+    <div class="leaf"></div>
+    <div class="leaf"></div>
+    <div class="leaf"></div>
+    <div class="leaf"></div>
+    <div class="leaf"></div>
+    <div class="leaf"></div>
+    <div class="leaf"></div>
+    <div class="leaf"></div>
+    <div class="leaf"></div>
+    <div class="leaf"></div>
+  </div>
+
+  <form class="main-form" method="POST" enctype="multipart/form-data">
+    <div class="main-container">
+      <div class="hero">
+        <div class="hero-title">🌿 Plant Health Diagnostics</div>
+        <p class="hero-subtitle">Upload your plant's leaf to get an instant health report.</p>
+      </div>
+
+      {% if results %}
+      <div class="results-grid">
+        <div class="results-col-1">
+          <div class="uploaded-image-wrapper card">
+            <img src="{{ results.image_data_url }}" alt="Uploaded Image" class="uploaded-image"/>
+          </div>
+        </div>
+
+        <div class="results-col-2">
+          <h1 class="prediction-header">{{ results.emoji }} {{ results.pred_class }}</h1>
+
+          <div class="column-layout">
+            <div class="metric-box card">
+              <h3>🎯 Confidence</h3>
+              <div class="chart-container">{{ results.charts.confidence_gauge | safe }}</div>
+            </div>
+            <div class="metric-box card">
+              {% if results.is_healthy %}
+                <h3>💚 Health Status</h3>
+              {% else %}
+                <h3>⚠️ Severity</h3>
+              {% endif %}
+              <div class="chart-container">{{ results.charts.severity_gauge | safe }}</div>
+
+              {% if results.is_healthy %}
+                <span class="badge-caption badge-good">Low risk</span>
+              {% else %}
+                {% set sev = results.severity %}
+                {% if sev < 30 %}
+                  <span class="badge-caption badge-good">Low severity</span>
+                {% elif sev < 70 %}
+                  <span class="badge-caption badge-mid">Moderate</span>
+                {% else %}
+                  <span class="badge-caption badge-bad">High</span>
+                {% endif %}
+              {% endif %}
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="tabs">
+            <input type="radio" name="tabs" id="tab1" class="tab-radio" checked/>
+            <label for="tab1" class="tab-label">Definition</label>
+            <div class="tab-content card">
+              {% if results.definition.status == 'success' %}
+                <p class="def-success">{{ results.definition.message }}</p>
+              {% elif results.definition.status == 'info' %}
+                <p class="def-info">{{ results.definition.message }}</p>
+              {% else %}
+                <strong>{{ results.definition.title }}</strong> — {{ results.definition.summary }}
+                {% if results.definition.source %}
+                  <p class="caption">Source: {{ results.definition.source }}</p>
+                {% endif %}
+              {% endif %}
+            </div>
+
+            <input type="radio" name="tabs" id="tab2" class="tab-radio"/>
+            <label for="tab2" class="tab-label">Care Guide</label>
+            <div class="tab-content card">
+              <h3>Actionable Tips</h3>
+              <ul>
+                {% for tip in results.care_guide %}
+                  <li>{{ tip | safe }}</li>
+                {% endfor %}
+              </ul>
+              <p class="caption">Follow local advisories and product labels.</p>
+            </div>
+
+            <input type="radio" name="tabs" id="tab3" class="tab-radio"/>
+            <label for="tab3" class="tab-label">Details</label>
+            <div class="tab-content card">
+              <h3>Analysis Details</h3>
+              <div class="column-layout">
+                <div class="metric-box-simple">
+                  <strong>Predicted Class</strong>
+                  <div>{{ results.pred_class }}</div>
+                </div>
+                <div class="metric-box-simple">
+                  <strong>Confidence</strong>
+                  <div>{{ "%.1f"|format(results.confidence * 100) }}%</div>
+                </div>
+                <div class="metric-box-simple">
+                  <strong>Severity</strong>
+                  {% if results.is_healthy %}
+                    <div>N/A (Healthy)</div>
+                  {% else %}
+                    <div>{{ "%.1f"|format(results.severity) }}%</div>
+                  {% endif %}
+                </div>
+              </div>
+              <br/>
+              <strong>Top suggestions</strong>
+              <ul>
+                {% for name, p in results.top3 %}
+                  <li>{{ get_class_emoji(name) }} <strong>{{ name }}</strong> — {{ "%.1f"|format(p * 100) }}%</li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+
+          <a href="/" class="button-new-analysis">Analyze Another Image</a>
+        </div>
+      </div>
+
+      {% else %}
+      <div class="file-uploader card">
+        {% if error %}
+          <p class="error-message">{{ error }}</p>
+        {% endif %}
+        <div class="file-input-wrapper">
+          <input type="file" name="plant_image" id="plant_image" class="file-input" required/>
+          <label for="plant_image" class="file-input-label">Drop a plant leaf image (JPG/PNG)</label>
+        </div>
+        <button type="submit" class="submit-button">Analyze Image</button>
+      </div>
+      {% if not error %}
+        <div class="info-box">Upload a leaf photo to begin.</div>
+      {% endif %}
+      {% endif %}
+    </div>
+  </form>
+
+  <script>
+    (function () {
+      function triggerResize() {
+        if (window.Plotly && document.querySelectorAll('.plotly-graph-div').length) {
+          document.querySelectorAll('.plotly-graph-div').forEach(function (el) {
+            try { window.Plotly.Plots.resize(el); } catch (e) {}
+          });
+        }
+      }
+      window.addEventListener('load', triggerResize);
+      window.addEventListener('resize', triggerResize);
+      document.addEventListener('change', function (e) {
+        if (e.target && e.target.classList.contains('tab-radio')) {
+          setTimeout(triggerResize, 50);
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
